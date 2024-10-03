@@ -40,7 +40,7 @@ export class QuickActionHandler {
     public handle(chatPrompt: ChatPrompt, tabID: string, eventId?: string) {
         this.tabsStorage.resetTabTimer(tabID)
         switch (chatPrompt.command) {
-            case '/dev':
+            case '/dev-abc':
                 this.handleFeatureDevCommand(chatPrompt, tabID, 'Q - Dev')
                 break
             case '/help':
